@@ -25,7 +25,7 @@ const SideBar = () => {
     };
     return (
         //mobile menu when true hide the sidebar
-      <div className={` flex-0.2 md:block w-[240px] overflow-y-auto h-full py-4  absolute md:relative  translate-x-[-240px] md:translate-x-0 transition-all ${
+      <div className={`  flex-0.2 md:block w-[240px] overflow-y-auto h-full py-4  absolute md:relative  translate-x-[-240px] md:translate-x-0 transition-all ${
         mobileMenu ? "translate-x-0" : ""
     }`}
       
@@ -48,7 +48,7 @@ const SideBar = () => {
                           }`}
                       />
                       {item.divider && (
-                          <hr className="my-5 border-white/[0.2]" />
+                          <hr className="my-5 border-[#D3D3D3]" />
                       )}
                   </React.Fragment>
               );

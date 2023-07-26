@@ -117,13 +117,13 @@ const VideoCardDetails = () => {
 
 
 
-
-                    <h1>Comments</h1>
+                    <br></br>
+                    <h1>Comments    <span className="font-light"><em>{comment?.totalCommentsCount}</em></span></h1>
                     {comment && comment?.comments?.map((item,index)=>{
                        console.log(item?.author?.title,"hello")
                        console.log(item?.content,"content")
-                    //    console.log(item?.publishedTimeText
-                    //     ,"time")
+                       console.log(item?.publishedTimeText
+                        ,"time")
                        console.log(item?.totalCommentsCount," totalCommentsCount")
                        console.log(item?.stats?.replies," replies")
                       return(
@@ -134,6 +134,7 @@ const VideoCardDetails = () => {
                      replies={item?.stats?.replies}
                      votes={item?.stats?.votes}
                      photo={item?.author?.avatar[1]?.url}
+                     publishedAt={item?.publishedTimeText}
                      />
                       )
                        

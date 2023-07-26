@@ -1,16 +1,16 @@
 import React from 'react'
 
-const CommentCard = ({title,replies,votes,content,photo}) => {
+const CommentCard = ({title,replies,votes,content,photo,publishedAt}) => {
   return (
-    <div className='flex'>  
+    <div className='flex mt-2'>  
       <div className="photo">
 <img src={photo} alt="avatar" className='rounded-full object-contain h-8 w-10' />
       </div>
       <div className="comment">
     
-        <h1 className='font-bold'>{title}            <span className='font-light'><em>2 years</em></span></h1>
+        <h1 className='font-bold'>{title}            <span className='font-light'><em>{publishedAt}</em></span></h1>
        <p>{content}</p>
-        <p>Replies-{replies}  Votes-{votes}</p>
+        <p className='font-light'> {replies}  <em>Replies </em>{votes}Votes</p>
       </div>
 
     </div>

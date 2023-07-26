@@ -5,13 +5,14 @@ import youtubeLogo from "../images/youtube-logo.svg"
 import { Avatar, Input } from '@mui/material';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import VideoCallOutlinedIcon from '@mui/icons-material/VideoCallOutlined';
-import { CgClose } from 'react-icons/cg';
-import { useNavigate } from 'react-router-dom';
+
+import { Link, useNavigate } from 'react-router-dom';
 
 import SideBar from './SideBar';
+import { Context } from '../context/context';
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
-
+const {mobileMenu,setMobileMenu}=useContext(Context)
  
 
   const navigate = useNavigate();
@@ -28,21 +29,20 @@ const Header = () => {
  
 
 
-  const [showSidebar,setShowSidebar]=useState(false)
-  const handleMenuClick=()=>{
-setShowSidebar(!showSidebar)
-  }
+  
   return (
     <>
 
     <div className='flex  justify-between sticky top-0 z-20 bg-white '>
      <div className='flex items-center '>
-      <button onClick={handleMenuClick}>
-      <MenuOutlinedIcon/>
-      </button>
-    
-    {showSidebar && <SideBar />}
-      <img  className=" w-[50%] md:h-[40px] mr-0 md:w-48  mt-0" src={youtubeLogo} alt="youtube logo" />
+         {mobileMenu && <MenuOutlinedIcon/>}
+      
+{/*     
+    {showSidebar && <SideBar />} */}
+    <Link to="/">
+    <img  className=" w-[50%] md:h-[40px] mr-0 md:w-48  mt-0" src={youtubeLogo} alt="youtube logo" />
+    </Link>
+     
      </div>
       
       <div  className='flex items-center  md:p-2 border-solid p-0 md:w-[40%] ' >
