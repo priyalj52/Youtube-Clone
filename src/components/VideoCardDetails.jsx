@@ -28,7 +28,7 @@ const VideoCardDetails = () => {
         setLoading(true);
         fetchVideoResultFromAPI(id).then((res) => res.json())
         .then((res) => {
-            console.log(res);
+            // console.log(res);
             setVideo(res);
             setLoading(false);
         }).catch((err) => console.log(err));
@@ -37,7 +37,7 @@ const VideoCardDetails = () => {
         setLoading(true);
         fetchVideoCommentsFromAPI(id).then((res) => res.json())
         .then((res) => {
-            console.log(res,"hi");
+            // console.log(res,"hi");
             setComments(res);
             setLoading(false);
         }).catch((err) => console.log(err));
@@ -47,7 +47,7 @@ const VideoCardDetails = () => {
         setLoading(true);
         fetchrelatedVideoFromAPI(id).then((res) => res.json())
         .then((res) => {
-            console.log(res);
+            // console.log(res);
             setRelatedVideos(res);
             setLoading(false);
         }).catch((err)=>console.log(err))
@@ -118,14 +118,14 @@ const VideoCardDetails = () => {
 
 
                     <br></br>
-                    <h1>Comments    <span className="font-light"><em>{comment?.totalCommentsCount}</em></span></h1>
+                    <h1><span className="font-light"><em>{comment?.totalCommentsCount}</em></span>  Comments </h1>
                     {comment && comment?.comments?.map((item,index)=>{
-                       console.log(item?.author?.title,"hello")
-                       console.log(item?.content,"content")
-                       console.log(item?.publishedTimeText
-                        ,"time")
-                       console.log(item?.totalCommentsCount," totalCommentsCount")
-                       console.log(item?.stats?.replies," replies")
+                    //    console.log(item?.author?.title,"hello")
+                    //    console.log(item?.content,"content")
+                    //    console.log(item?.publishedTimeText
+                    //     ,"time")
+                    //    console.log(item?.totalCommentsCount," totalCommentsCount")
+                    //    console.log(item?.stats?.replies," replies")
                       return(
                         
                      <CommentCard 

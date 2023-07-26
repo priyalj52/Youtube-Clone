@@ -14,7 +14,8 @@ export const AppContext = (props) => {
     setLoading(true);
     await fetchSearchResultFromAPI(query)
       .then((res) => res.json())
-     .then((data)=>{console.log(data.contents)
+     .then((data)=>{
+      // console.log(data.contents)
     setRes(data.contents);
     setLoading(false);
     })

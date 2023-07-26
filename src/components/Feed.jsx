@@ -18,7 +18,7 @@ const FeedPage = () => {
           {!loading &&
             Array.isArray(res) &&
             res.map((item) => {
-              // Ensure 'item' is an object before accessing the 'video' property
+              // Ensuring 'item' is an object before accessing the 'video' property
               if (item?.type === "video") {
                 return (
                   <VideoCard
