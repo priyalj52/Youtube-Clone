@@ -2,16 +2,16 @@
 This youtube clone is built using ReactJS ,TailwindCSS and  <a href="https://rapidapi.com/Glavier/api/youtube138">Youtube API</a>.User can search,watch youtube videos.
 ## SCREENSHOTS
 ### HOME PAGE
-![image](https://github.com/priyalj52/Youtube-Clone/assets/94099575/3c7d5073-19a6-4472-b3b0-aa18590dc3b8)
+<img src="https://github.com/priyalj52/Youtube-Clone/assets/94099575/1e293b16-d857-44d6-85bc-1fbb96de1f1b"/>
 
 ## VIDEO PAGE
-![image](https://github.com/priyalj52/Youtube-Clone/assets/94099575/67571f93-7cda-404e-9467-c82e41e60800)
-![image](https://github.com/priyalj52/Youtube-Clone/assets/94099575/a61acfcd-0d55-4539-ab20-bc1ee14e90c4)
+<img src="https://github.com/priyalj52/Youtube-Clone/assets/94099575/d738c1ae-3b57-42e0-b624-386308d6f492"
+/>
+<img src="https://github.com/priyalj52/Youtube-Clone/assets/94099575/3fde643c-8cd8-4410-9f96-4a4f0977bedb"/>
+
 
 ## SEARCH PAGE
-![image](https://github.com/priyalj52/Youtube-Clone/assets/94099575/ad286286-2494-4ab7-aa63-0a0562d097f4)
-
-![image](https://github.com/priyalj52/Youtube-Clone/assets/94099575/8595d2cf-a676-45a1-885c-39b881441ffc)
+<img src="https://github.com/priyalj52/Youtube-Clone/assets/94099575/f70328bd-66be-4ede-b192-551a53602a2e"/>
 
 
 
